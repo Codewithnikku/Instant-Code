@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Account</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-content">
+      <div class="left-panel">
+        <div class="imgContainer">
+          <img src="main.jpg" alt="Desert" />
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="right-panel-content">
+          <h1>Create an account</h1>
+          <div class="input-group">
+            <input type="text" placeholder="First name" id="first-name" required />
+            <input type="text" placeholder="Last name" id="last-name" required />
+          </div>
+          <input type="email" placeholder="Email address" id="email" required style="margin-bottom: 15px; width: 100%;" />
+          <input type="password" placeholder="Create password" id="password" required style="margin-bottom: 15px; width: 100%;" />
+          <div class="terms">
+            <input type="checkbox" id="terms" /> <label for="terms">I agree to the Terms & Conditions</label>
+          </div>
+          <button class="create-btn" onclick="createAccount()">Create account</button>
+          <div class="social-login">
+            <button onclick="socialLogin('Google')">
+              <img src="https://img.icons8.com/color/16/000000/google-logo.png" /> Google
+            </button>
+            <button onclick="socialLogin('Apple')">
+              <img src="https://img.icons8.com/ios-filled/16/ffffff/mac-os.png" /> Apple
+            </button>
+          </div>
+          <div class="login-link">
+            Already have an account? <a href="#">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      &copy; All Rights Reserved by Developer NS
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
