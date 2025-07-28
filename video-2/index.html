@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left-panel">
+      <div class="imgContainer">
+        <img src="main.jpg" alt="Desert" />
+      </div>
+    </div>
+    <div class="right-panel">
+      <h1>Login</h1>
+      <p>Please enter your login details to sign in.</p>
+      <input type="email" placeholder="Email address" id="email" required />
+      <input type="password" placeholder="Password" id="password" required />
+      <div class="options">
+        <label><input type="checkbox" id="remember" /> Keep me logged in</label>
+        <a href="#">Forgot password?</a>
+      </div>
+      <button class="login-btn" onclick="loginUser()">Log In</button>
+      <div class="footer-text">
+        Don't have an account? <a href="#">Sign up</a>
+      </div>
+      <div class="divider">or continue with</div>
+      <div class="social-login">
+        <button><img src="https://img.icons8.com/color/16/000000/google-logo.png" />Google</button>
+        <button><img src="https://img.icons8.com/ios-filled/16/ffffff/mac-os.png" />Apple</button>
+        <button><img src="https://img.icons8.com/color/16/000000/facebook-new.png" />Facebook</button>
+        <button><img src="https://img.icons8.com/color/16/000000/twitter--v1.png" />Twitter</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
